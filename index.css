@@ -13,6 +13,7 @@
         padding:0;
         box-sizing: border-box;
         overflow-x: hidden;
+        overflow-y: scroll;
         font-family: 'Poppins', sans-serif;
     }
     body{
@@ -31,7 +32,7 @@
         margin-left:auto;
         margin-right:auto;
         opacity:0.7;
-        margin-top:200px;
+        margin-top:90px;
     }
     h1{
         color:white;
@@ -81,7 +82,6 @@
     /******* LOGIN PAGE START *******/
     #login{
         background-color: #080710;
-        background-image:url("./images.png");
     }
     .page-two-logo{
         display:block;
@@ -90,7 +90,7 @@
     }
     .background{
         width: 430px;
-        height: 110%;
+        height: 100vh;
         position: absolute;
         transform: translate(-50%,-50%);
         left: 50%;
@@ -117,7 +117,7 @@
             #00E091
         );
         right: -30px;
-        bottom: -80px;
+        bottom: -150px;
     }
     .login-form{
         height:100%;
@@ -237,12 +237,15 @@
     ::placeholder {
         color: transparent;
     }
-    .google-signin{
-        margin-top:140px;
-        width:70%;
+    .google-sign{
+        width:78%;
         display: block;
-        margin:100px auto 40px auto;
-        padding: 12px 40px;
+        margin:10px auto 0 auto;
+        padding: 16px 43px;
+        border-radius: 16px;
+        border:.5px solid white;
+        background-color: transparent;
+        color:white;
     }
     .sign-in-label {
         position: absolute;
@@ -256,18 +259,30 @@
     }
     .submitBtn {
         display: block;
-        margin:30px auto 40px auto;
+        margin:30px auto 10px auto;
         padding: 12px 40px;
         font-size: 16px;
-        width:70%;
+        width:78%;
+        border-radius:16px;
         border:none;
-        border-radius:12px;
         color:#000;
         background:rgb(245, 245, 245);
         cursor: pointer;
     }
     .submitBtn:hover {
         transform: translateY(-2px);
+    }
+    .separator{
+        border:1px solid grey;
+        width:40%;
+        margin:20px auto 20px auto;
+    }
+    .divider{
+        display:flex;
+    }
+    .divider p{
+        color:white;
+        align-items:center;
     }
     .input:focus + .sign-in-label {
         top: -6px;
@@ -284,131 +299,34 @@
     /******* HOMEPAGE START ********/
     .home-page{
         height:100%;
+        background-color:#14213d;
     }
-    .header{
-        position: absolute;
-        left: 0px;
-        top: 44px;
+    .home-header{
+        background-color: #000;
     }
     .home-page-logo{
-        margin-top:60px;
-        width:40px;
-        height:40px;
-        border-radius:50%;
+        margin:30px auto 0 auto;
+        width:180px;
+        height:180px;
+        display:block;
     }
     footer{
         position: absolute;
         left: 0;
         top: 95%;
-        bottom: 0;
+        bottom: 3%;
         width:100%;
+        display:inline;
     }
     textarea{
-        width:100%;
+        width:90%;
         background-color: #1b1b1b00;
         color:white;
     }
+    .chat-btn{
+        width:10%;
+        background-color: white;
+    }
 
     /******* HOMEPAGE END ********/
-}
-.title {
-    font-size: 32px;
-    margin-bottom: 50px;
-    color:#fff;
-}
-.sign-up {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  #000;
-    font-family: "lato", sans-serif;
-}
-.sign-up-form{
-    background-color: #000;
-    width: 400px;
-    border-radius: 8px;
-    padding: 20px 40px;
-    height:100vh;
-}
-.inputContainer {
-    position: relative;
-    height: 45px;
-    width: 90%;
-    margin:0 auto 25px auto;
-}
-.input {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #DADCE0;
-    border-radius: 7px;
-    font-size: 16px;
-    padding: 0 20px;
-    outline: none;
-    background: none;
-    z-index: 1;
-}
-::placeholder {
-    color: transparent;
-}
-.google-sign{
-    width:78%;
-    display: block;
-    margin:30px auto 40px auto;
-    padding: 16px 43px;
-    border-radius: 16px;
-    border:.5px solid white;
-    background-color: transparent;
-    color:white;
-}
-.sign-in-label {
-    position: absolute;
-    top: 13px;
-    left: 15px;
-    padding: 0 4px;
-    color: #DADCE0;
-    font-size: 16px;
-    transition: 0.5s;
-    z-index: 0;
-}
-.submitBtn {
-    display: block;
-    margin:30px auto 10px auto;
-    padding: 12px 40px;
-    font-size: 16px;
-    width:78%;
-    border-radius:16px;
-    border:none;
-    color:#000;
-    background:rgb(245, 245, 245);
-    cursor: pointer;
-}
-.submitBtn:hover {
-    transform: translateY(-2px);
-}
-.separator{
-    border:1px solid grey;
-    width:40%;
-    margin:20px auto 20px auto;
-}
-.divider{
-    display:flex;
-}
-.divider p{
-    color:white;
-    align-items:center;
-}
-.input:focus + .sign-in-label {
-    top: -6px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: #00E091;
-}
-.input:focus {
-    border: 2px solid #90f5d2;
 }
